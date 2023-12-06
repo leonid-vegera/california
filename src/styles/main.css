@@ -56,7 +56,7 @@ button {
   height: 80px;
   margin-bottom: 28px;
   position: sticky;
-  z-index: 2;
+  z-index: 10;
   top: 0;
   background-color: #fff;
 }
@@ -104,6 +104,9 @@ button {
   z-index: 1;
 }
 
+.banner {
+  overflow: hidden;
+}
 .banner__text-wrapper {
   display: flex;
   width: 50%;
@@ -155,6 +158,21 @@ button {
   background-image: url("../assets/images/banner-image.png");
   background-repeat: no-repeat;
   background-position: bottom;
+}
+.banner__indicators {
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  z-index: 2;
+}
+.banner__indicator {
+  flex: 1 0 194px;
+  height: 2px;
+  background-color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */

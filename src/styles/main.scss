@@ -16,7 +16,7 @@
   height: 80px;
   margin-bottom: 28px;
   position: sticky;
-  z-index: 2;
+  z-index: 10;
   top: 0;
   background-color: $white-color;
 
@@ -75,6 +75,8 @@
 }
 
 .banner {
+  overflow: hidden;
+
   &__text-wrapper {
     display: flex;
     width: 50%;
@@ -82,8 +84,6 @@
   }
 
   &__arrow {
-    //display: flex;
-    //flex: 0 0 56px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -99,10 +99,6 @@
   &__button {
     margin: auto;
   }
-
-  //&__right-button {
-  //  transform: rotate(180deg);
-  //}
 
   &__text {
     padding-top: 145px;
@@ -141,5 +137,22 @@
     background-image: url("../assets/images/banner-image.png");
     background-repeat: no-repeat;
     background-position: bottom;
+  }
+
+  &__indicators {
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    z-index: 2;
+  }
+
+  &__indicator {
+    flex: 1 0 194px;
+    height: 2px;
+    background-color: $black-color;
   }
 }
