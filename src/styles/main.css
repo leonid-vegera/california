@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, ol {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/*.outer-links {*/
+/*  color: $blueColor;*/
+/*  :visited {*/
+/*    color: $blueColor;*/
+/*  }*/
+/*}*/
+a {
+  text-decoration: none;
+}
+
+/*textarea,*/
+/*input {*/
+/*  font-family: Roboto, Arial, Helvetica, sans-serif;*/
+/*  font-weight: 400;*/
+/*  font-size: 14px;*/
+/*}*/
+button {
+  padding: 0;
+  border: 0;
+  font-family: "Inter", sans-serif;
+  background-color: rgba(225, 225, 225, 0);
+  cursor: pointer;
+}
+
+.body {
+  background-color: #fff;
+}
+.body__wrapper {
+  padding: 0 73px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 28px;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  background-color: #fff;
+}
+.header__actions {
+  display: flex;
+  gap: 1px;
+  margin: 0 8px 0 3px;
+}
+.header__button {
+  padding: 10px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 34px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  list-style: none;
+}
+.nav__item {
+  cursor: pointer;
+}
+.nav__item-dropdown::after {
+  content: "";
+  display: inline-block;
+  margin-left: 3px;
+  width: 12px;
+  height: 8px;
+  background-image: url("../assets/images/down-arrow.svg");
+}
+.nav__link {
+  color: #000;
+}
+
+.main__hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 550px;
+  border-radius: 32px;
+  background-color: #DCE5E2;
+  position: relative;
+  z-index: 1;
+}
+
+.banner__text-wrapper {
+  display: flex;
+  width: 50%;
+  padding-left: 56px;
+}
+.banner__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 18px;
+}
+.banner__arrow-right {
+  transform: translateY(-50%) rotate(180deg);
+  right: 18px;
+}
+.banner__button {
+  margin: auto;
+}
+.banner__text {
+  padding-top: 145px;
+}
+.banner__title {
+  font-size: 58px;
+  line-height: 70px;
+  margin-bottom: 19px;
+}
+.banner__description {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 30px;
+  max-width: 565px;
+}
+.banner__explore-button {
+  max-width: 170px;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 22px;
+  border: 1px solid #000;
+  border-radius: 200px;
+  margin-bottom: 127px;
+}
+.banner__image-section {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  background-image: url("../assets/images/banner-image.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+/*# sourceMappingURL=main.css.map */
