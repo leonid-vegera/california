@@ -1,11 +1,41 @@
-@import "./normalize";
+@import "reset";
+@import "./variables";
+
+
+button {
+  padding: 0;
+  border: 0;
+  font-family: $service-text;
+  background-color: rgba(225, 225, 225, 0);
+  cursor: pointer;
+}
+
+// home-page is class fot html tag, because in BEM shouldn't exist
+// normalize or reset global styles. So common styles should be in
+// html tag
+.home-page {
+  box-sizing: border-box;
+  font-family: $description-text;
+  font-weight: 400;
+  scroll-behavior: smooth;
+
+  &__content {
+    margin: 0;
+  }
+}
 
 .body {
-  //min-width: 320px;
   background-color: $white-color;
 
   &__wrapper {
-    padding: 0 73px;
+    margin: 0 73px;
+  }
+
+  &__header {
+    margin-bottom: 28px;
+    position: sticky;
+    z-index: 10;
+    top: 0;
   }
 }
 
@@ -14,10 +44,6 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  margin-bottom: 28px;
-  position: sticky;
-  z-index: 10;
-  top: 0;
   background-color: $white-color;
 
   &__actions {
@@ -46,7 +72,7 @@
     cursor: pointer;
   }
 
-  &__item-dropdown::after {
+  &__item--dropdown::after {
     content: '';
     display: inline-block;
     margin-left: 3px;
@@ -70,7 +96,7 @@
     background-color: #DCE5E2;
     position: relative;
     z-index: 1;
-
+    margin-bottom: 75px;
   }
 }
 
@@ -89,11 +115,11 @@
     transform: translateY(-50%);
     left: 18px;
 
-    &-right {
+    &--right {
       transform: translateY(-50%) rotate(180deg);
       right: 18px;
+      left: auto;
     }
-
   }
 
   &__button {
@@ -154,5 +180,132 @@
     flex: 1 0 194px;
     height: 2px;
     background-color: $black-color;
+  }
+}
+
+.all-products {
+  &__heading {
+    margin-bottom: 55px;
+  }
+
+  &__area {
+    display: flex;
+    height: 792px;
+    margin-bottom: 100px;
+  }
+}
+
+.section-heading {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 9px;
+    font-family: $description-text;
+    font-size: 42px;
+    line-height: 53px;
+  }
+
+  &__description {
+    margin: 0 auto;
+    font-family: $description-text;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 628px;
+  }
+}
+
+.categories {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+
+  &__left-side {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+  }
+
+  &__right-side {
+    display: flex;
+    flex: 1 1 50%;
+    gap: 16px;
+  }
+
+  &__laptops {
+    min-height: 472px;
+    padding: 0 42px;
+    background-image: url("../assets/images/laptop-image.jpg");
+    background-position: 42px 0;
+    background-repeat: no-repeat;
+    background-size: 500px 377px;
+  }
+
+  &__watch {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    position: relative;
+    top: 72px;
+    min-height: 270px;
+    padding: 0 42px;
+    background-image: url("../assets/images/watch-image.jpg");
+    background-position: 42px 0;
+    background-repeat: no-repeat;
+    background-size: 381px 270px;
+  }
+
+  &__phones {
+    flex: 1 1 50%;
+    text-align: center;
+    background-image: url("../assets/images/phones-image.png");
+    background-position: 16px 144px;
+    background-repeat: no-repeat;
+    background-size: 405px 367px;
+  }
+
+  &__tablet {
+    flex: 1 1 50%;
+    text-align: center;
+    background-image: url("../assets/images/tablet-image.png");
+    background-position: center 252px;
+    background-repeat: no-repeat;
+    background-size: 467px 425px;
+  }
+}
+
+.category-card {
+  box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+
+  &__laptops-text {
+    margin-top: 376px;
+    text-align: right;
+    float: right;
+    width: 192px;
+  }
+
+  &__watch-text {
+    width: 128px;
+  }
+
+  &__phones-text {
+    margin: 552px 31px 0;
+    text-align: center;
+  }
+
+  &__tablet-text {
+    margin: 114px 39px 0;
+  }
+
+  &__title {
+    font-size: 15px;
+    line-height: 19px;
+    font-family: $service-text;
+  }
+
+  &__description {
+    font-size: 32px;
+    line-height: 38px;
+    font-family: $description-text;
   }
 }

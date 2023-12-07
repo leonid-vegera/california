@@ -1,0 +1,28 @@
+//$description-text: 'Readex Pro', sans-serif;
+//$service-text: 'Inter', sans-serif;
+//$black-color: #000;
+//$white-color: #fff;
+
+h1, h2, h3, h4, h5, h6, ul, li, ol, a, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li, ul, ol {
+  list-style: none;
+}
+
+
+//button {
+//  padding: 0;
+//  border: 0;
+//  font-family: $service-text;
+//  background-color: rgba(225, 225, 225, 0);
+//  cursor: pointer;
+//}

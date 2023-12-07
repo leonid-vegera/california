@@ -4,15 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass src/styles/main.scss src/styles/main.css --watch",
     "start": "npx live-server src",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "bemlint": "npx bemlint"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "bemlint": "^1.7.0",
     "node-sass": "^9.0.0",
     "sass": "^1.69.5"
   }

@@ -1,39 +1,18 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Readex Pro", sans-serif;
-  font-weight: 400;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6, ul, li, ol {
+h1, h2, h3, h4, h5, h6, ul, li, ol, a, p {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  border: 0;
 }
 
-/*.outer-links {*/
-/*  color: $blueColor;*/
-/*  :visited {*/
-/*    color: $blueColor;*/
-/*  }*/
-/*}*/
 a {
   text-decoration: none;
 }
 
-/*textarea,*/
-/*input {*/
-/*  font-family: Roboto, Arial, Helvetica, sans-serif;*/
-/*  font-weight: 400;*/
-/*  font-size: 14px;*/
-/*}*/
+li, ul, ol {
+  list-style: none;
+}
+
 button {
   padding: 0;
   border: 0;
@@ -42,11 +21,27 @@ button {
   cursor: pointer;
 }
 
+.home-page {
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+.home-page__content {
+  margin: 0;
+}
+
 .body {
   background-color: #fff;
 }
 .body__wrapper {
-  padding: 0 73px;
+  margin: 0 73px;
+}
+.body__header {
+  margin-bottom: 28px;
+  position: sticky;
+  z-index: 10;
+  top: 0;
 }
 
 .header {
@@ -54,10 +49,6 @@ button {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  margin-bottom: 28px;
-  position: sticky;
-  z-index: 10;
-  top: 0;
   background-color: #fff;
 }
 .header__actions {
@@ -81,7 +72,7 @@ button {
 .nav__item {
   cursor: pointer;
 }
-.nav__item-dropdown::after {
+.nav__item--dropdown::after {
   content: "";
   display: inline-block;
   margin-left: 3px;
@@ -102,6 +93,7 @@ button {
   background-color: #DCE5E2;
   position: relative;
   z-index: 1;
+  margin-bottom: 75px;
 }
 
 .banner {
@@ -118,9 +110,10 @@ button {
   transform: translateY(-50%);
   left: 18px;
 }
-.banner__arrow-right {
+.banner__arrow--right {
   transform: translateY(-50%) rotate(180deg);
   right: 18px;
+  left: auto;
 }
 .banner__button {
   margin: auto;
@@ -173,6 +166,116 @@ button {
   flex: 1 0 194px;
   height: 2px;
   background-color: #000;
+}
+
+.all-products__heading {
+  margin-bottom: 55px;
+}
+.all-products__area {
+  display: flex;
+  height: 792px;
+  margin-bottom: 100px;
+}
+
+.section-heading {
+  text-align: center;
+}
+.section-heading__title {
+  margin-bottom: 9px;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 42px;
+  line-height: 53px;
+}
+.section-heading__description {
+  margin: 0 auto;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  max-width: 628px;
+}
+
+.categories {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+.categories__left-side {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+}
+.categories__right-side {
+  display: flex;
+  flex: 1 1 50%;
+  gap: 16px;
+}
+.categories__laptops {
+  min-height: 472px;
+  padding: 0 42px;
+  background-image: url("../assets/images/laptop-image.jpg");
+  background-position: 42px 0;
+  background-repeat: no-repeat;
+  background-size: 500px 377px;
+}
+.categories__watch {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  position: relative;
+  top: 72px;
+  min-height: 270px;
+  padding: 0 42px;
+  background-image: url("../assets/images/watch-image.jpg");
+  background-position: 42px 0;
+  background-repeat: no-repeat;
+  background-size: 381px 270px;
+}
+.categories__phones {
+  flex: 1 1 50%;
+  text-align: center;
+  background-image: url("../assets/images/phones-image.png");
+  background-position: 16px 144px;
+  background-repeat: no-repeat;
+  background-size: 405px 367px;
+}
+.categories__tablet {
+  flex: 1 1 50%;
+  text-align: center;
+  background-image: url("../assets/images/tablet-image.png");
+  background-position: center 252px;
+  background-repeat: no-repeat;
+  background-size: 467px 425px;
+}
+
+.category-card {
+  box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+}
+.category-card__laptops-text {
+  margin-top: 376px;
+  text-align: right;
+  float: right;
+  width: 192px;
+}
+.category-card__watch-text {
+  width: 128px;
+}
+.category-card__phones-text {
+  margin: 552px 31px 0;
+  text-align: center;
+}
+.category-card__tablet-text {
+  margin: 114px 39px 0;
+}
+.category-card__title {
+  font-size: 15px;
+  line-height: 19px;
+  font-family: "Inter", sans-serif;
+}
+.category-card__description {
+  font-size: 32px;
+  line-height: 38px;
+  font-family: "Readex Pro", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

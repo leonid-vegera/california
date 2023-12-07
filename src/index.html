@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="home-page">
 <head>
   <meta charset="UTF-8">
   <title>California</title>
@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap" rel="stylesheet">
 </head>
-<body class="body">
+<body class="home-page__content body">
 <div class="body__wrapper">
-  <header class="header">
+  <header class="body__header header">
     <a href="/" class="header__logo">
       <img src="./assets/images/california-logo.svg" alt="Main logo">
     </a>
@@ -19,7 +19,7 @@
         <li class="nav__item">
           <a href="/all-products" class="nav__link">All products</a>
         </li>
-        <li class="nav__item nav__item-dropdown">
+        <li class="nav__item nav__item--dropdown">
           <a href="#" class="nav__link">
             Solutions
           </a>
@@ -53,7 +53,7 @@
           <img src="./assets/images/side-arrow.svg" alt="Button to the left">
         </button>
       </div>
-      <div class="banner__arrow banner__arrow-right">
+      <div class="banner__arrow banner__arrow--right">
         <button class="banner__button">
           <img src="./assets/images/side-arrow.svg" alt="Button to the left">
         </button>
@@ -80,6 +80,48 @@
         <div class="banner__indicator"></div>
         <div class="banner__indicator"></div>
         <div class="banner__indicator"></div>
+      </div>
+    </section>
+
+    <section class="main__all-products all-products">
+      <div class="all-products__heading section-heading">
+        <h2 class="section-heading__title">
+          Shop our latest offers and categories
+        </h2>
+        <p class="section-heading__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus
+          morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <div class="all-products__area categories">
+        <div class="categories__left-side">
+          <div class="categories__laptops category-card">
+            <div class="category-card__laptops-text">
+              <h3 class="category-card__title">Laptops</h3>
+              <p class="category-card__description">True Laptop Solution</p>
+            </div>
+          </div>
+          <div class="categories__watch category-card">
+            <div class="category-card__watch-text">
+              <h3 class="category-card__title">Watch</h3>
+              <p class="category-card__description">Not just stylisht</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories__right-side">
+          <div class="categories__phones category-card">
+            <div class="category-card__phones-text">
+              <h3 class="category-card__title">Phones</h3>
+              <p class="category-card__description">Your day to day life</p>
+            </div>
+          </div>
+          <div class="categories__tablet category-card">
+            <div class="category-card__tablet-text">
+              <h3 class="category-card__title">Tablet</h3>
+              <p class="category-card__description">Empower your work</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
