@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, ul, li, ol, a, p {
+h1, h2, h3, h4, h5, h6, ul, li, ol, a, p, input {
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -11,6 +11,10 @@ a {
 
 li, ul, ol {
   list-style: none;
+}
+
+input {
+  outline: none;
 }
 
 button {
@@ -93,6 +97,9 @@ button {
   background-color: #DCE5E2;
   position: relative;
   z-index: 1;
+  margin-bottom: 75px;
+}
+.main__ideas {
   margin-bottom: 75px;
 }
 
@@ -386,6 +393,70 @@ button {
   font-family: "Inter", sans-serif;
   font-size: 24px;
   line-height: 30px;
+}
+.ideas__link {
+  font-size: 24px;
+  line-height: 28.8px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.linked-text {
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+}
+.linked-text__wrapper {
+  display: flex;
+  color: #000;
+}
+
+.search__heading {
+  margin-bottom: 15px;
+}
+
+.search-area {
+  margin: 0 auto;
+  max-width: 650px;
+}
+.search-area__field {
+  margin: 0 auto 18px;
+}
+.search-area__variants {
+  margin-bottom: 69px;
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border: 1px solid #C5C5C5;
+  border-radius: 100px;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-family: "Inter", sans-serif;
+}
+.search-field__icon {
+  width: 30px;
+  margin-left: 17px;
+}
+.search-field__input {
+  padding: 21px 60% 21px 20px;
+}
+
+.variants {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.variant {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  line-height: 16.8px;
+  padding: 12px 22px;
+  border: 1px solid #C5C5C5;
+  border-radius: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */
