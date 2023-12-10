@@ -93,7 +93,7 @@ button {
     width: 100%;
     min-height: 550px;
     border-radius: 32px;
-    background-color: #DCE5E2;
+    background-color: $banner-color;
     position: relative;
     z-index: 1;
     margin-bottom: 75px;
@@ -101,6 +101,10 @@ button {
 
   &__ideas {
     margin-bottom: 75px;
+  }
+
+  &__sign-up {
+    margin: 0 auto 19px;
   }
 }
 
@@ -218,6 +222,12 @@ button {
     font-size: 14px;
     line-height: 17px;
     max-width: 628px;
+
+    &--sign-up {
+      font-family: $service-text;
+      font-size: 16px;
+      line-height: 19.2px;
+    }
   }
 }
 
@@ -501,6 +511,20 @@ button {
 
   &__input {
     padding: 21px 60% 21px 20px;
+
+    &--sign-up {
+      padding: 16px 22% 17px 32px;
+      background-color: $banner-color;
+      max-width: 285px;
+    }
+  }
+
+  &__button {
+    background-color: $black-color;
+    color: $white-color;
+    padding: 16px 9% 17px 32px;
+    border: 1px solid $black-color;
+    width: -webkit-fill-available;
   }
 }
 
@@ -520,5 +544,30 @@ button {
   padding: 12px 22px;
   border: 1px solid $border-grey-color;
   border-radius: 200px;
+}
+
+.sign-up {
+  //height: 450px;
+  max-width: 935px;
+  border-radius: 16px;
+  background-color: $banner-color;
+  padding: 47px 20px 43px;
+
+  &__heading {
+    margin-bottom: 14px;
+  }
+
+  &__image {
+    margin: 0 auto 14px;
+    width: fit-content;
+  }
+
+  &__input {
+    max-width: 400px;
+    height: 50px;
+    overflow: hidden;
+    margin: 0 auto;
+    //background-color: $banner-color;
+  }
 }
 

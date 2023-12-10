@@ -102,6 +102,9 @@ button {
 .main__ideas {
   margin-bottom: 75px;
 }
+.main__sign-up {
+  margin: 0 auto 19px;
+}
 
 .banner {
   overflow: hidden;
@@ -202,6 +205,11 @@ button {
   font-size: 14px;
   line-height: 17px;
   max-width: 628px;
+}
+.section-heading__description--sign-up {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 19.2px;
 }
 
 .categories {
@@ -442,6 +450,18 @@ button {
 .search-field__input {
   padding: 21px 60% 21px 20px;
 }
+.search-field__input--sign-up {
+  padding: 16px 22% 17px 32px;
+  background-color: #DCE5E2;
+  max-width: 285px;
+}
+.search-field__button {
+  background-color: #000;
+  color: #fff;
+  padding: 16px 9% 17px 32px;
+  border: 1px solid #000;
+  width: -webkit-fill-available;
+}
 
 .variants {
   display: flex;
@@ -457,6 +477,26 @@ button {
   padding: 12px 22px;
   border: 1px solid #C5C5C5;
   border-radius: 200px;
+}
+
+.sign-up {
+  max-width: 935px;
+  border-radius: 16px;
+  background-color: #DCE5E2;
+  padding: 47px 20px 43px;
+}
+.sign-up__heading {
+  margin-bottom: 14px;
+}
+.sign-up__image {
+  margin: 0 auto 14px;
+  width: fit-content;
+}
+.sign-up__input {
+  max-width: 400px;
+  height: 50px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
