@@ -2,12 +2,16 @@
 @import "./variables";
 
 
-button {
+.button {
   padding: 0;
   border: 0;
   font-family: $service-text;
   background-color: rgba(225, 225, 225, 0);
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 // home-page is class fot html tag, because in BEM shouldn't exist
@@ -28,14 +32,16 @@ button {
   background-color: $white-color;
 
   &__wrapper {
-    margin: 0 73px;
+    //margin: 0 73px;
+    min-width: 930px;
   }
 
   &__header {
-    margin-bottom: 28px;
-    position: sticky;
-    z-index: 10;
-    top: 0;
+    margin: 0 73px 28px;
+    //margin-bottom: 28px;
+    //position: sticky;
+    //z-index: 10;
+    //top: 0;
   }
 }
 
@@ -46,6 +52,10 @@ button {
   height: 80px;
   background-color: $white-color;
 
+  &__nav {
+    margin: 0 34px;
+  }
+
   &__actions {
     display: flex;
     gap: 1px;
@@ -54,6 +64,10 @@ button {
 
   &__button {
     padding: 10px;
+
+    //&:hover {
+    //  transform: scale(1.1);
+    //}
   }
 }
 
@@ -70,6 +84,11 @@ button {
 
   &__item {
     cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__item--dropdown::after {
@@ -87,6 +106,8 @@ button {
 }
 
 .main {
+  margin: 0 73px;
+
   &__hero {
     display: flex;
     justify-content: space-between;
@@ -132,6 +153,11 @@ button {
 
   &__button {
     margin: auto;
+    transition: transform 0.3s;
+    //
+    //&:hover {
+    //  transform: scale(1.1);
+    //}
   }
 
   &__text {
@@ -145,9 +171,9 @@ button {
   }
 
   &__description {
-    font-family: $service-text;
-    font-size: 16px;
-    line-height: 19px;
+    //font-family: $service-text;
+    //font-size: 16px;
+    //line-height: 19px;
     margin-bottom: 30px;
     max-width: 565px;
   }
@@ -192,6 +218,14 @@ button {
   line-height: 21.6px;
   border: 1px solid $black-color;
   border-radius: 200px;
+  cursor: pointer;
+  background-color: #fff0;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 2px 2px 13px $hover-color;
+  }
 }
 
 .all-products {
@@ -255,6 +289,8 @@ button {
     background-position: 42px 0;
     background-repeat: no-repeat;
     background-size: 500px 377px;
+    //position: relative;
+    //z-index: 5;
   }
 
   &__watch {
@@ -292,7 +328,8 @@ button {
 }
 
 .category-card {
-  box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.4s;
+  color: $black-color;
 
   &__laptops-text {
     margin-top: 376px;
@@ -318,12 +355,25 @@ button {
     font-size: 15px;
     line-height: 19px;
     font-family: $service-text;
+    transition: 0.3s;
   }
 
   &__description {
     font-size: 32px;
     line-height: 38px;
     font-family: $description-text;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 35px 0 $hover-color;
+    //position: relative;
+    //transform: translateY(72px);
+    //top: 72px;
+    //transition: 1.5s;
+
+    .category-card__title {
+      font-size: 16px;
+    }
   }
 }
 
@@ -384,7 +434,8 @@ button {
 
   &__area {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     min-height: 453px;
     gap: 28px;
     margin-bottom: 75px;
@@ -525,6 +576,15 @@ button {
     padding: 16px 9% 17px 32px;
     border: 1px solid $black-color;
     width: -webkit-fill-available;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #fff0;
+      border: none;
+      border-left: 1px solid $black-color;
+      color: $black-color;
+    }
   }
 }
 
@@ -533,17 +593,22 @@ button {
   justify-content: center;
   gap: 7px;
   flex-wrap: wrap;
-
 }
 
 .variant {
-  //height: 42px;
   font-size: 14px;
   font-family: $service-text;
   line-height: 16.8px;
   padding: 12px 22px;
   border: 1px solid $border-grey-color;
   border-radius: 200px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 2px 2px 13px $hover-color;
+  }
 }
 
 .sign-up {
@@ -568,6 +633,103 @@ button {
     overflow: hidden;
     margin: 0 auto;
     //background-color: $banner-color;
+  }
+}
+
+.footer {
+  height: 378px;
+  background-color: $light-grey-color;
+
+  &__container {
+    margin: 45px 73px 64px;
+    display: flex;
+    gap: 28px;
+  }
+
+  &__logo {
+    width: 181px;
+    height: 22px;
+
+    &-link {
+      display: inline-block;
+      margin-bottom: 18px;
+    }
+
+    &-area {
+      flex: 2 2 394px;
+    }
+  }
+
+  &__description {
+    padding-right: 30%;
+  }
+
+  &__sign {
+    margin: 0 73px 4px;
+  }
+}
+
+.sign-mark {
+  display: flex;
+  justify-content: space-between;
+
+  &__wrapper {
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 21.6px;
+    font-family: $description-text;
+  }
+
+  &__link {
+
+  }
+}
+
+
+.divider {
+  height: 1px;
+  background-color: $banner-color;
+
+  &--lower {
+    width: auto;
+    margin: 0 45px 52px;
+  }
+}
+
+.description-text {
+  font-family: $service-text;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.structure-section {
+  flex: 1 1 197px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 19px;
+    font-size: 22px;
+    line-height: 27.5px;
+    font-family: $description-text;
+  }
+
+  &__item {
+    margin-bottom: 14px;
+    font-size: 17px;
+    line-height: 21.6px;
+    font-family: $service-text;
+    color: $black-color;
+    transition: 0.3s;
+
+    &:hover {
+      font-size: 18px;
+    }
   }
 }
 

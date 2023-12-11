@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap" rel="stylesheet">
 </head>
-<body class="home-page__content body">
+<body class="home-page__content body" id="home">
 <div class="body__wrapper">
   <header class="body__header header">
     <a href="/" class="header__logo">
@@ -17,7 +17,7 @@
     <nav class="header__nav nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="/all-products" class="nav__link">All products</a>
+          <a href="#all-products" class="nav__link">All products</a>
         </li>
         <li class="nav__item nav__item--dropdown">
           <a href="#" class="nav__link">
@@ -25,36 +25,36 @@
           </a>
         </li>
         <li class="nav__item">
-          <a href="/about" class="nav__link">
+          <a href="#about" class="nav__link">
             About
           </a>
         </li>
         <li class="nav__item">
-          <a href="/support" class="nav__link">
+          <a href="#support" class="nav__link">
             Support
           </a>
         </li>
       </ul>
     </nav>
     <div class="header__actions">
-      <button class="header__button">
+      <button class="header__button button">
         <img src="./assets/images/search-icon.svg" alt="Search icon">
       </button>
-      <button class="header__button">
+      <button class="header__button button">
         <img src="./assets/images/basket-icon.svg" alt="Basket icon">
       </button>
     </div>
   </header>
 
   <main class="main">
-    <section class="main__hero banner">
+    <section class="main__hero banner" id="about">
       <div class="banner__arrow">
-        <button class="banner__button">
+        <button class="banner__button button">
           <img src="./assets/images/side-arrow.svg" alt="Button to the left">
         </button>
       </div>
       <div class="banner__arrow banner__arrow--right">
-        <button class="banner__button">
+        <button class="banner__button button">
           <img src="./assets/images/side-arrow.svg" alt="Button to the left">
         </button>
       </div>
@@ -64,7 +64,7 @@
           <h1 class="banner__title">
             The new phones are here take a look.
           </h1>
-          <h2 class="banner__description">
+          <h2 class="banner__description description-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus
             morbi turpis.
           </h2>
@@ -83,7 +83,7 @@
       </div>
     </section>
 
-    <section class="main__all-products all-products">
+    <section class="main__all-products all-products" id="all-products">
       <div class="all-products__heading section-heading">
         <h2 class="section-heading__title">
           Shop our latest offers and categories
@@ -95,32 +95,32 @@
       </div>
       <div class="all-products__area categories">
         <div class="categories__left-side">
-          <div class="categories__laptops category-card">
+          <a class="categories__laptops category-card" href="#laptops">
             <div class="category-card__laptops-text">
               <h3 class="category-card__title">Laptops</h3>
               <p class="category-card__description">True Laptop Solution</p>
             </div>
-          </div>
-          <div class="categories__watch category-card">
+          </a>
+          <a class="categories__watch category-card" href="#watch">
             <div class="category-card__watch-text">
               <h3 class="category-card__title">Watch</h3>
               <p class="category-card__description">Not just stylisht</p>
             </div>
-          </div>
+          </a>
         </div>
         <div class="categories__right-side">
-          <div class="categories__phones category-card">
+          <a class="categories__phones category-card" href="#phones">
             <div class="category-card__phones-text">
               <h3 class="category-card__title">Phones</h3>
               <p class="category-card__description">Your day to day life</p>
             </div>
-          </div>
-          <div class="categories__tablet category-card">
+          </a>
+          <a class="categories__tablet category-card" href="#tablet">
             <div class="category-card__tablet-text">
               <h3 class="category-card__title">Tablet</h3>
               <p class="category-card__description">Empower your work</p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -306,7 +306,7 @@
       </div>
     </section>
 
-    <section class="main__sign-up sign-up">
+    <section class="main__sign-up sign-up" id="support">
       <div class="sign-up__heading section-heading">
         <h2 class="section-heading__title">
           Never miss a thing
@@ -318,14 +318,73 @@
       <div class="sign-up__image">
         <img src="./assets/images/gadgets-image.png" alt="Gadgets image">
       </div>
-      <form class="sign-up__input search-field">
+      <form class="sign-up__input search-field" action="#sign-up" method="get">
         <input class="search-field__input search-field__input--sign-up" type="text" placeholder="Your email">
         <button class="search-field__button" type="submit">Sign up</button>
       </form>
     </section>
   </main>
-  <footer class="footer">
 
+  <footer class="body__footer footer">
+    <div class="divider"></div>
+    <div class="footer__container">
+      <div class="footer__logo-area">
+        <a class="footer__logo-link" href="#home">
+          <img class="footer__logo" src="./assets/images/california-logo.svg" alt="Footer logo">
+        </a>
+        <h2 class="footer__description description-text">
+          Sign up for texts to be notified about our best offers on the perfect gifts.
+        </h2>
+      </div>
+      <div class="footer__structure-area structure-section">
+        <h3 class="structure-section__title">All products</h3>
+        <a href="#phones" class="structure-section__item">Phones</a>
+        <a href="#watch" class="structure-section__item">Watch</a>
+        <a href="#tablet" class="structure-section__item">Tablet</a>
+        <a href="#laptops" class="structure-section__item">Laptops</a>
+      </div>
+      <div class="footer__structure-area structure-section">
+        <h3 class="structure-section__title">Company</h3>
+        <a href="#about" class="structure-section__item">About</a>
+        <a href="#support" class="structure-section__item">Support</a>
+      </div>
+      <div class="footer__structure-area structure-section">
+        <h3 class="structure-section__title">Support</h3>
+        <a href="#style-guide" class="structure-section__item">Style Guide</a>
+        <a href="#licensing" class="structure-section__item">Licensing</a>
+        <a href="#change-log" class="structure-section__item">Change Log</a>
+        <a href="#contact" class="structure-section__item">Contact</a>
+      </div>
+      <div class="footer__structure-area structure-section">
+        <h3 class="structure-section__title">Follow Us</h3>
+        <a href="#instagram" class="structure-section__item">Instagram</a>
+        <a href="#facebook" class="structure-section__item">Facebook</a>
+        <a href="#linkedin" class="structure-section__item">LinkedIn</a>
+        <a href="#youtube" class="structure-section__item">Youtube</a>
+      </div>
+    </div>
+    <div class="divider divider--lower"></div>
+    <div class="footer__sign sign-mark">
+      <div class="sign-mark__wrapper">
+        <span class="sign-mark__title">Made By: </span>
+
+        <div class="linked-text">
+          <a class="linked-text__wrapper" href="#">
+            <span class="linked-text__title">Azwedo</span>
+            <img src="./assets/images/link-arrow.svg" alt="Link arrow">
+          </a>
+        </div>
+      </div>
+      <div class="sign-mark__wrapper">
+        <span class="sign-mark__title">Powered by: </span>
+        <div class="linked-text">
+          <a class="linked-text__wrapper" href="#">
+            <span class="linked-text__title">Webflow</span>
+            <img src="./assets/images/link-arrow.svg" alt="Link arrow">
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
 </div>
 

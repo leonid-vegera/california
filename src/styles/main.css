@@ -17,12 +17,15 @@ input {
   outline: none;
 }
 
-button {
+.button {
   padding: 0;
   border: 0;
   font-family: "Inter", sans-serif;
   background-color: rgba(225, 225, 225, 0);
   cursor: pointer;
+}
+.button:hover {
+  transform: scale(1.1);
 }
 
 .home-page {
@@ -39,13 +42,10 @@ button {
   background-color: #fff;
 }
 .body__wrapper {
-  margin: 0 73px;
+  min-width: 930px;
 }
 .body__header {
-  margin-bottom: 28px;
-  position: sticky;
-  z-index: 10;
-  top: 0;
+  margin: 0 73px 28px;
 }
 
 .header {
@@ -54,6 +54,9 @@ button {
   align-items: center;
   height: 80px;
   background-color: #fff;
+}
+.header__nav {
+  margin: 0 34px;
 }
 .header__actions {
   display: flex;
@@ -75,6 +78,10 @@ button {
 }
 .nav__item {
   cursor: pointer;
+  transition: transform 0.3s;
+}
+.nav__item:hover {
+  transform: scale(1.1);
 }
 .nav__item--dropdown::after {
   content: "";
@@ -88,6 +95,9 @@ button {
   color: #000;
 }
 
+.main {
+  margin: 0 73px;
+}
 .main__hero {
   display: flex;
   justify-content: space-between;
@@ -127,6 +137,7 @@ button {
 }
 .banner__button {
   margin: auto;
+  transition: transform 0.3s;
 }
 .banner__text {
   padding-top: 145px;
@@ -137,9 +148,6 @@ button {
   margin-bottom: 19px;
 }
 .banner__description {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
   margin-bottom: 30px;
   max-width: 565px;
 }
@@ -179,6 +187,13 @@ button {
   line-height: 21.6px;
   border: 1px solid #000;
   border-radius: 200px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.3s;
+}
+.explore-button:hover {
+  opacity: 0.8;
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.25);
 }
 
 .all-products__heading {
@@ -267,7 +282,8 @@ button {
 }
 
 .category-card {
-  box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.4s;
+  color: #000;
 }
 .category-card__laptops-text {
   margin-top: 376px;
@@ -289,11 +305,18 @@ button {
   font-size: 15px;
   line-height: 19px;
   font-family: "Inter", sans-serif;
+  transition: 0.3s;
 }
 .category-card__description {
   font-size: 32px;
   line-height: 38px;
   font-family: "Readex Pro", sans-serif;
+}
+.category-card:hover {
+  box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+}
+.category-card:hover .category-card__title {
+  font-size: 16px;
 }
 
 .popular__heading {
@@ -341,7 +364,8 @@ button {
 }
 .best-products__area {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   min-height: 453px;
   gap: 28px;
   margin-bottom: 75px;
@@ -461,6 +485,14 @@ button {
   padding: 16px 9% 17px 32px;
   border: 1px solid #000;
   width: -webkit-fill-available;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.search-field__button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-left: 1px solid #000;
+  color: #000;
 }
 
 .variants {
@@ -477,6 +509,12 @@ button {
   padding: 12px 22px;
   border: 1px solid #C5C5C5;
   border-radius: 200px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.variant:hover {
+  opacity: 0.8;
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.25);
 }
 
 .sign-up {
@@ -497,6 +535,85 @@ button {
   height: 50px;
   overflow: hidden;
   margin: 0 auto;
+}
+
+.footer {
+  height: 378px;
+  background-color: #F8F9FA;
+}
+.footer__container {
+  margin: 45px 73px 64px;
+  display: flex;
+  gap: 28px;
+}
+.footer__logo {
+  width: 181px;
+  height: 22px;
+}
+.footer__logo-link {
+  display: inline-block;
+  margin-bottom: 18px;
+}
+.footer__logo-area {
+  flex: 2 2 394px;
+}
+.footer__description {
+  padding-right: 30%;
+}
+.footer__sign {
+  margin: 0 73px 4px;
+}
+
+.sign-mark {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-mark__wrapper {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+}
+.sign-mark__title {
+  font-size: 18px;
+  line-height: 21.6px;
+  font-family: "Readex Pro", sans-serif;
+}
+.divider {
+  height: 1px;
+  background-color: #DCE5E2;
+}
+.divider--lower {
+  width: auto;
+  margin: 0 45px 52px;
+}
+
+.description-text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.structure-section {
+  flex: 1 1 197px;
+  display: flex;
+  flex-direction: column;
+}
+.structure-section__title {
+  margin-bottom: 19px;
+  font-size: 22px;
+  line-height: 27.5px;
+  font-family: "Readex Pro", sans-serif;
+}
+.structure-section__item {
+  margin-bottom: 14px;
+  font-size: 17px;
+  line-height: 21.6px;
+  font-family: "Inter", sans-serif;
+  color: #000;
+  transition: 0.3s;
+}
+.structure-section__item:hover {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=main.css.map */
