@@ -6,4 +6,4 @@ the [Figma design](https://www.figma.com/file/sxUpg7EtdWxR0GQSvalTlf/California?
 
 Technologies used: HTML, SCSS, BEM
 
-[DEMO Link of landing](https://leonid-vegera.github.io/California/)
+[DEMO Link of landing](https://leonid-vegera.github.io/california/)
