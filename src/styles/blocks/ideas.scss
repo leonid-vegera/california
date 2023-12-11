@@ -1,0 +1,43 @@
+.ideas {
+  &__heading {
+    margin-bottom: 56px;
+  }
+
+  &__area {
+    display: flex;
+    gap: 35px;
+    min-height: 420px;
+    width: 100%;
+    margin-bottom: 73px;
+  }
+
+  &__image {
+    border-radius: 16px;
+    flex: 0 1 620px;
+    width: 100%;
+    background-image: url('../assets/images/ideas-book.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 639px;
+    gap: 28px;
+    margin-top: 14px;
+    margin-right: 39px;
+    font-family: $service-text;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__link {
+    font-size: 24px;
+    line-height: 28.8px;
+    margin: 0 auto;
+    width: fit-content;
+  }
+}

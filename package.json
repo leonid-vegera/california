@@ -5,15 +5,12 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass src/styles/main.scss src/styles/main.css --watch",
-    "start": "npx live-server src",
-    "build": "webpack --mode production",
-    "bemlint": "npx bemlint"
+    "start": "npx live-server src"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "bemlint": "^1.7.0",
     "node-sass": "^9.0.0",
     "sass": "^1.69.5"
   }

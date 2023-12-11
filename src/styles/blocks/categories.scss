@@ -1,0 +1,59 @@
+.categories {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+
+  &__left-side {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+  }
+
+  &__right-side {
+    display: flex;
+    flex: 1 1 50%;
+    gap: 16px;
+  }
+
+  &__laptops {
+    min-height: 472px;
+    padding: 0 42px;
+    background-image: url("../assets/images/laptop-image.jpg");
+    background-position: 42px 0;
+    background-repeat: no-repeat;
+    background-size: 500px 377px;
+  }
+
+  &__watch {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    position: relative;
+    top: 72px;
+    min-height: 270px;
+    padding: 0 42px;
+    background-image: url("../assets/images/watch-image.jpg");
+    background-position: 42px 0;
+    background-repeat: no-repeat;
+    background-size: 381px 270px;
+  }
+
+  &__phones {
+    flex: 1 1 50%;
+    text-align: center;
+    background-image: url("../assets/images/phones-image.png");
+    background-position: 16px 144px;
+    background-repeat: no-repeat;
+    background-size: 405px 367px;
+  }
+
+  &__tablet {
+    flex: 1 1 50%;
+    text-align: center;
+    background-image: url("../assets/images/tablet-image.png");
+    background-position: center 252px;
+    background-repeat: no-repeat;
+    background-size: 467px 425px;
+  }
+}

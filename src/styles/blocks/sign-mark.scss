@@ -1,0 +1,16 @@
+.sign-mark {
+  display: flex;
+  justify-content: space-between;
+
+  &__wrapper {
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 21.6px;
+    font-family: $description-text;
+  }
+}

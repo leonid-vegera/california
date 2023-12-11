@@ -1,0 +1,14 @@
+.best-products {
+  &__heading {
+    margin-bottom: 56px;
+  }
+
+  &__area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 453px;
+    gap: 28px;
+    margin-bottom: 75px;
+  }
+}

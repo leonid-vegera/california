@@ -1,0 +1,9 @@
+.divider {
+  height: 1px;
+  background-color: $banner-color;
+
+  &--lower {
+    width: auto;
+    margin: 0 45px 52px;
+  }
+}

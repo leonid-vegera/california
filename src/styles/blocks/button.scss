@@ -1,0 +1,11 @@
+.button {
+  padding: 0;
+  border: 0;
+  font-family: $service-text;
+  background-color: rgba(225, 225, 225, 0);
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

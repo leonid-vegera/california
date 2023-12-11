@@ -1,0 +1,11 @@
+.body {
+  background-color: $white-color;
+
+  &__wrapper {
+    min-width: 930px;
+  }
+
+  &__header {
+    margin: 0 73px 28px;
+  }
+}
