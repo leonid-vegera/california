@@ -1,0 +1,25 @@
+.structure-section {
+  flex: 1 1 197px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 19px;
+    font-size: 22px;
+    line-height: 27.5px;
+    font-family: $description-text;
+  }
+
+  &__item {
+    margin-bottom: 14px;
+    font-size: 17px;
+    line-height: 21.6px;
+    font-family: $service-text;
+    color: $black-color;
+    transition: 0.3s;
+
+    &:hover {
+      font-size: 18px;
+    }
+  }
+}

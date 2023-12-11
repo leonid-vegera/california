@@ -1,0 +1,45 @@
+.category-card {
+  transition: 0.4s;
+  color: $black-color;
+
+  &__laptops-text {
+    margin-top: 376px;
+    text-align: right;
+    float: right;
+    width: 192px;
+  }
+
+  &__watch-text {
+    width: 128px;
+  }
+
+  &__phones-text {
+    margin: 552px 31px 0;
+    text-align: center;
+  }
+
+  &__tablet-text {
+    margin: 114px 39px 0;
+  }
+
+  &__title {
+    font-size: 15px;
+    line-height: 19px;
+    font-family: $service-text;
+    transition: 0.3s;
+  }
+
+  &__description {
+    font-size: 32px;
+    line-height: 38px;
+    font-family: $description-text;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 35px 0 $hover-color;
+
+    .category-card__title {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.sign-up {
+  max-width: 935px;
+  border-radius: 16px;
+  background-color: $banner-color;
+  padding: 47px 20px 43px;
+
+  &__heading {
+    margin-bottom: 14px;
+  }
+
+  &__image {
+    margin: 0 auto 14px;
+    width: fit-content;
+  }
+
+  &__input {
+    max-width: 400px;
+    height: 50px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}

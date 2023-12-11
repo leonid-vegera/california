@@ -1,0 +1,10 @@
+.home-page {
+  box-sizing: border-box;
+  font-family: $description-text;
+  font-weight: 400;
+  scroll-behavior: smooth;
+
+  &__content {
+    margin: 0;
+  }
+}

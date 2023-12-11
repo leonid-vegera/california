@@ -1,0 +1,33 @@
+.nav {
+  &__list {
+    display: flex;
+    gap: 34px;
+    text-decoration: none;
+    font-family: $service-text;
+    font-size: 14px;
+    text-transform: uppercase;
+    list-style: none;
+  }
+
+  &__item {
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__item--dropdown::after {
+    content: '';
+    display: inline-block;
+    margin-left: 3px;
+    width: 12px;
+    height: 8px;
+    background-image: url("../assets/images/down-arrow.svg");
+  }
+
+  &__link {
+    color: $black-color;
+  }
+}

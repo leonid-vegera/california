@@ -1,0 +1,15 @@
+.variant {
+  font-size: 14px;
+  font-family: $service-text;
+  line-height: 16.8px;
+  padding: 12px 22px;
+  border: 1px solid $border-grey-color;
+  border-radius: 200px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 2px 2px 13px $hover-color;
+  }
+}

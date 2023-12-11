@@ -1,0 +1,33 @@
+.demanded-item {
+  &__image {
+    padding: 28px;
+  }
+
+  &__summary {
+    height: 121px;
+    width: 261px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 27.5px;
+    font-family: $description-text;
+    margin-bottom: 9px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 16.8px;
+    font-family: $service-text;
+    color: $grey-color;
+  }
+
+  &__value {
+    font-size: 18px;
+    line-height: 21.6px;
+    font-family: $service-text;
+  }
+}

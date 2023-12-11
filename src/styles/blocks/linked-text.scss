@@ -1,0 +1,9 @@
+.linked-text {
+  font-family: $service-text;
+  text-transform: capitalize;
+
+  &__wrapper {
+    display: flex;
+    color: $black-color;
+  }
+}

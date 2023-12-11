@@ -1,0 +1,28 @@
+.best-product {
+  text-align: center;
+  padding-top: 41px;
+  width: 413px;
+  border-radius: 16px;
+  background-color: $light-grey-color;
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 13px;
+    line-height: 16.8px;
+    font-family: $description-text;
+  }
+
+  &__description {
+    font-size: 28px;
+    line-height: 35px;
+    font-family: $description-text;
+  }
+
+  &__explore-button {
+    max-width: 190px;
+    margin-bottom: 30px;
+  }
+}
