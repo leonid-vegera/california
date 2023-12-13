@@ -99,12 +99,9 @@ input {
   margin: 0 73px;
 }
 .main__hero {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   min-height: 550px;
   border-radius: 32px;
-  background-color: #DCE5E2;
   position: relative;
   z-index: 1;
   margin-bottom: 75px;
@@ -119,10 +116,28 @@ input {
 .banner {
   overflow: hidden;
 }
+.banner__wrapper {
+  display: flex;
+  transition: 1s ease-in-out;
+}
+.banner__container {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: space-between;
+  padding-left: 56px;
+  background-color: #DCE5E2;
+  width: -webkit-fill-available;
+}
+.banner__container--blue {
+  background-color: deepskyblue;
+}
+.banner__container--coral {
+  background-color: lightcoral;
+}
 .banner__text-wrapper {
   display: flex;
   width: 50%;
-  padding-left: 56px;
 }
 .banner__arrow {
   position: absolute;
@@ -174,9 +189,27 @@ input {
   z-index: 2;
 }
 .banner__indicator {
-  flex: 1 0 194px;
   height: 2px;
   background-color: #000;
+  cursor: pointer;
+  position: relative;
+}
+.banner__indicator-wrapper {
+  position: relative;
+  flex: 1 0 194px;
+}
+.banner__indicator::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+.banner__indicator--active {
+  height: 4px;
+  border-radius: 100px;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.25);
 }
 
 .explore-button {

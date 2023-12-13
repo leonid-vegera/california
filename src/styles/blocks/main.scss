@@ -2,12 +2,9 @@
   margin: 0 73px;
 
   &__hero {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     min-height: 550px;
     border-radius: 32px;
-    background-color: $banner-color;
     position: relative;
     z-index: 1;
     margin-bottom: 75px;
