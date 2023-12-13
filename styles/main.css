@@ -24,6 +24,7 @@ input {
   background-color: rgba(225, 225, 225, 0);
   cursor: pointer;
 }
+
 .button:hover {
   transform: scale(1.1);
 }
@@ -34,6 +35,7 @@ input {
   font-weight: 400;
   scroll-behavior: smooth;
 }
+
 .home-page__content {
   margin: 0;
 }
@@ -41,9 +43,11 @@ input {
 .body {
   background-color: #fff;
 }
+
 .body__wrapper {
   min-width: 930px;
 }
+
 .body__header {
   margin: 0 73px 28px;
 }
@@ -55,14 +59,17 @@ input {
   height: 80px;
   background-color: #fff;
 }
+
 .header__nav {
   margin: 0 34px;
 }
+
 .header__actions {
   display: flex;
   gap: 1px;
   margin: 0 8px 0 3px;
 }
+
 .header__button {
   padding: 10px;
 }
@@ -76,13 +83,16 @@ input {
   text-transform: uppercase;
   list-style: none;
 }
+
 .nav__item {
   cursor: pointer;
   transition: transform 0.3s;
 }
+
 .nav__item:hover {
   transform: scale(1.1);
 }
+
 .nav__item--dropdown::after {
   content: "";
   display: inline-block;
@@ -91,6 +101,7 @@ input {
   height: 8px;
   background-image: url("../assets/images/down-arrow.svg");
 }
+
 .nav__link {
   color: #000;
 }
@@ -98,6 +109,7 @@ input {
 .main {
   margin: 0 73px;
 }
+
 .main__hero {
   width: 100%;
   min-height: 550px;
@@ -106,9 +118,11 @@ input {
   z-index: 1;
   margin-bottom: 75px;
 }
+
 .main__ideas {
   margin-bottom: 75px;
 }
+
 .main__sign-up {
   margin: 0 auto 19px;
 }
@@ -116,10 +130,12 @@ input {
 .banner {
   overflow: hidden;
 }
+
 .banner__wrapper {
   display: flex;
   transition: 1s ease-in-out;
 }
+
 .banner__container {
   display: flex;
   flex-grow: 1;
@@ -129,47 +145,58 @@ input {
   background-color: #DCE5E2;
   width: -webkit-fill-available;
 }
+
 .banner__container--blue {
   background-color: deepskyblue;
 }
+
 .banner__container--coral {
   background-color: lightcoral;
 }
+
 .banner__text-wrapper {
   display: flex;
   width: 50%;
 }
+
 .banner__arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 18px;
 }
+
 .banner__arrow--right {
   transform: translateY(-50%) rotate(180deg);
   right: 18px;
   left: auto;
 }
+
 .banner__button {
   margin: auto;
   transition: transform 0.3s;
 }
+
 .banner__text {
   padding-top: 145px;
 }
+
 .banner__title {
   font-size: 58px;
   line-height: 70px;
   margin-bottom: 19px;
 }
+
 .banner__description {
   margin-bottom: 30px;
   max-width: 565px;
 }
+
 .banner__explore-button {
   max-width: 170px;
   margin-bottom: 127px;
 }
+
 .banner__image-section {
   display: flex;
   justify-content: flex-end;
@@ -178,6 +205,7 @@ input {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+
 .banner__indicators {
   position: absolute;
   bottom: 34px;
@@ -188,6 +216,7 @@ input {
   gap: 34px;
   z-index: 2;
 }
+
 .banner__indicator {
   position: relative;
   flex: 1 0 194px;
@@ -195,6 +224,7 @@ input {
   background-color: #000;
   cursor: pointer;
 }
+
 .banner__indicator::before {
   content: "";
   position: absolute;
@@ -203,6 +233,7 @@ input {
   right: 0;
   bottom: -10px;
 }
+
 .banner__indicator--active {
   height: 4px;
   border-radius: 100px;
@@ -221,6 +252,7 @@ input {
   background-color: rgba(255, 255, 255, 0);
   transition: 0.3s;
 }
+
 .explore-button:hover {
   opacity: 0.8;
   box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.25);
@@ -229,6 +261,7 @@ input {
 .all-products__heading {
   margin-bottom: 55px;
 }
+
 .all-products__area {
   display: flex;
   height: 792px;
@@ -238,12 +271,14 @@ input {
 .section-heading {
   text-align: center;
 }
+
 .section-heading__title {
   margin-bottom: 9px;
   font-family: "Readex Pro", sans-serif;
   font-size: 42px;
   line-height: 53px;
 }
+
 .section-heading__description {
   margin: 0 auto;
   font-family: "Readex Pro", sans-serif;
@@ -251,6 +286,7 @@ input {
   line-height: 17px;
   max-width: 628px;
 }
+
 .section-heading__description--sign-up {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -262,16 +298,19 @@ input {
   gap: 16px;
   width: 100%;
 }
+
 .categories__left-side {
   display: flex;
   flex-direction: column;
   flex: 1 1 50%;
 }
+
 .categories__right-side {
   display: flex;
   flex: 1 1 50%;
   gap: 16px;
 }
+
 .categories__laptops {
   min-height: 472px;
   padding: 0 42px;
@@ -280,6 +319,7 @@ input {
   background-repeat: no-repeat;
   background-size: 500px 377px;
 }
+
 .categories__watch {
   display: flex;
   justify-content: flex-end;
@@ -294,6 +334,7 @@ input {
   background-repeat: no-repeat;
   background-size: 381px 270px;
 }
+
 .categories__phones {
   flex: 1 1 50%;
   text-align: center;
@@ -302,6 +343,7 @@ input {
   background-repeat: no-repeat;
   background-size: 405px 367px;
 }
+
 .categories__tablet {
   flex: 1 1 50%;
   text-align: center;
@@ -315,36 +357,44 @@ input {
   transition: 0.4s;
   color: #000;
 }
+
 .category-card__laptops-text {
   margin-top: 376px;
   text-align: right;
   float: right;
   width: 192px;
 }
+
 .category-card__watch-text {
   width: 128px;
 }
+
 .category-card__phones-text {
   margin: 552px 31px 0;
   text-align: center;
 }
+
 .category-card__tablet-text {
   margin: 114px 39px 0;
 }
+
 .category-card__title {
   font-size: 15px;
   line-height: 19px;
   font-family: "Inter", sans-serif;
   transition: 0.3s;
 }
+
 .category-card__description {
   font-size: 32px;
   line-height: 38px;
   font-family: "Readex Pro", sans-serif;
 }
+
 .category-card:hover {
   box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
 }
+
 .category-card:hover .category-card__title {
   font-size: 16px;
 }
@@ -352,6 +402,7 @@ input {
 .popular__heading {
   margin-bottom: 31px;
 }
+
 .popular__area {
   display: grid;
   grid-template-columns: repeat(auto-fill, 303px);
@@ -364,6 +415,7 @@ input {
 .demanded-item__image {
   padding: 28px;
 }
+
 .demanded-item__summary {
   height: 121px;
   width: 261px;
@@ -371,18 +423,21 @@ input {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .demanded-item__title {
   font-size: 22px;
   line-height: 27.5px;
   font-family: "Readex Pro", sans-serif;
   margin-bottom: 9px;
 }
+
 .demanded-item__description {
   font-size: 14px;
   line-height: 16.8px;
   font-family: "Inter", sans-serif;
   color: #4B4B4B;
 }
+
 .demanded-item__value {
   font-size: 18px;
   line-height: 21.6px;
@@ -392,6 +447,7 @@ input {
 .best-products__heading {
   margin-bottom: 56px;
 }
+
 .best-products__area {
   display: flex;
   justify-content: center;
@@ -408,19 +464,23 @@ input {
   border-radius: 16px;
   background-color: #F8F9FA;
 }
+
 .best-product__text {
   margin-bottom: 30px;
 }
+
 .best-product__title {
   font-size: 13px;
   line-height: 16.8px;
   font-family: "Readex Pro", sans-serif;
 }
+
 .best-product__description {
   font-size: 28px;
   line-height: 35px;
   font-family: "Readex Pro", sans-serif;
 }
+
 .best-product__explore-button {
   max-width: 190px;
   margin-bottom: 30px;
@@ -429,6 +489,7 @@ input {
 .ideas__heading {
   margin-bottom: 56px;
 }
+
 .ideas__area {
   display: flex;
   gap: 35px;
@@ -436,6 +497,7 @@ input {
   width: 100%;
   margin-bottom: 73px;
 }
+
 .ideas__image {
   border-radius: 16px;
   flex: 0 1 620px;
@@ -445,6 +507,7 @@ input {
   background-position: center;
   background-size: cover;
 }
+
 .ideas__description {
   display: flex;
   flex-direction: column;
@@ -456,6 +519,7 @@ input {
   font-size: 24px;
   line-height: 30px;
 }
+
 .ideas__link {
   font-size: 24px;
   line-height: 28.8px;
@@ -467,6 +531,7 @@ input {
   font-family: "Inter", sans-serif;
   text-transform: capitalize;
 }
+
 .linked-text__wrapper {
   display: flex;
   color: #000;
@@ -480,9 +545,11 @@ input {
   margin: 0 auto;
   max-width: 650px;
 }
+
 .search-area__field {
   margin: 0 auto 18px;
 }
+
 .search-area__variants {
   margin-bottom: 69px;
 }
@@ -497,18 +564,22 @@ input {
   line-height: 16.8px;
   font-family: "Inter", sans-serif;
 }
+
 .search-field__icon {
   width: 30px;
   margin-left: 17px;
 }
+
 .search-field__input {
   padding: 21px 60% 21px 20px;
 }
+
 .search-field__input--sign-up {
   padding: 16px 22% 17px 32px;
   background-color: #DCE5E2;
   max-width: 285px;
 }
+
 .search-field__button {
   background-color: #000;
   color: #fff;
@@ -518,6 +589,7 @@ input {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .search-field__button:hover {
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -542,6 +614,7 @@ input {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .variant:hover {
   opacity: 0.8;
   box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.25);
@@ -553,13 +626,16 @@ input {
   background-color: #DCE5E2;
   padding: 47px 20px 43px;
 }
+
 .sign-up__heading {
   margin-bottom: 14px;
 }
+
 .sign-up__image {
   margin: 0 auto 14px;
   width: fit-content;
 }
+
 .sign-up__input {
   max-width: 400px;
   height: 50px;
@@ -571,25 +647,31 @@ input {
   height: 378px;
   background-color: #F8F9FA;
 }
+
 .footer__container {
   margin: 45px 73px 64px;
   display: flex;
   gap: 28px;
 }
+
 .footer__logo {
   width: 181px;
   height: 22px;
 }
+
 .footer__logo-link {
   display: inline-block;
   margin-bottom: 18px;
 }
+
 .footer__logo-area {
   flex: 2 2 394px;
 }
+
 .footer__description {
   padding-right: 30%;
 }
+
 .footer__sign {
   margin: 0 73px 4px;
 }
@@ -598,11 +680,13 @@ input {
   display: flex;
   justify-content: space-between;
 }
+
 .sign-mark__wrapper {
   display: flex;
   gap: 5px;
   align-items: baseline;
 }
+
 .sign-mark__title {
   font-size: 18px;
   line-height: 21.6px;
@@ -613,6 +697,7 @@ input {
   height: 1px;
   background-color: #DCE5E2;
 }
+
 .divider--lower {
   width: auto;
   margin: 0 45px 52px;
@@ -629,12 +714,14 @@ input {
   display: flex;
   flex-direction: column;
 }
+
 .structure-section__title {
   margin-bottom: 19px;
   font-size: 22px;
   line-height: 27.5px;
   font-family: "Readex Pro", sans-serif;
 }
+
 .structure-section__item {
   margin-bottom: 14px;
   font-size: 17px;
@@ -643,6 +730,7 @@ input {
   color: #000;
   transition: 0.3s;
 }
+
 .structure-section__item:hover {
   font-size: 18px;
 }
