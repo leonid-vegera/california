@@ -89,15 +89,11 @@
   }
 
   &__indicator {
+    position: relative;
+    flex: 1 0 194px;
     height: 2px;
     background-color: $black-color;
     cursor: pointer;
-    position: relative;
-
-    &-wrapper {
-      position: relative;
-      flex: 1 0 194px;
-    }
 
     &::before {
       content: "";

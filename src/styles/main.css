@@ -189,14 +189,11 @@ input {
   z-index: 2;
 }
 .banner__indicator {
+  position: relative;
+  flex: 1 0 194px;
   height: 2px;
   background-color: #000;
   cursor: pointer;
-  position: relative;
-}
-.banner__indicator-wrapper {
-  position: relative;
-  flex: 1 0 194px;
 }
 .banner__indicator::before {
   content: "";
