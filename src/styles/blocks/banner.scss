@@ -1,10 +1,33 @@
 .banner {
   overflow: hidden;
 
+  &__wrapper {
+    display: flex;
+    transition: 1s ease-in-out;
+  }
+
+  &__container {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: space-between;
+    padding-left: 56px;
+    background-color: $banner-color;
+    width: -webkit-fill-available;
+
+
+    &--blue {
+      background-color: deepskyblue;
+    }
+
+    &--coral {
+      background-color: lightcoral;
+    }
+  }
+
   &__text-wrapper {
     display: flex;
     width: 50%;
-    padding-left: 56px;
   }
 
   &__arrow {
@@ -66,8 +89,25 @@
   }
 
   &__indicator {
+    position: relative;
     flex: 1 0 194px;
     height: 2px;
     background-color: $black-color;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+    }
+
+    &--active {
+      height: 4px;
+      border-radius: 100px;
+      box-shadow: 0 0 6px 3px $hover-color;
+    }
   }
 }
