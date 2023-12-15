@@ -1,0 +1,28 @@
+.solutions {
+  width: max-content;
+  box-shadow: 5px 5px 5px $hover-color;
+  transition: 0.4s;
+  height: fit-content;
+
+  &__list {
+    font-family: $service-text;
+    margin: 15px;
+    color: $black-color;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-size: 13px;
+
+    &:hover {
+      color: #060633;
+    }
+  }
+}
