@@ -9,25 +9,56 @@
     list-style: none;
   }
 
-  &__item {
-    cursor: pointer;
-    transition: transform 0.3s;
-
-    &:hover {
-      transform: scale(1.1);
-    }
+  &__popup {
+    position: absolute;
+    top: 18px;
+    overflow: hidden;
+    height: 0;
+    z-index: -1;
+    opacity: 0;
+    background-color: $white-color;
+    transition: 0.8s;
   }
 
-  &__item--dropdown::after {
-    content: '';
-    display: inline-block;
-    margin-left: 3px;
-    width: 12px;
-    height: 8px;
-    background-image: url("../assets/images/down-arrow.svg");
+  &__item {
+    cursor: pointer;
+    transition: 0.3s;
+
+    &--dropdown {
+      position: relative;
+      z-index: 5;
+      transition: 0.4s;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        margin-left: 3px;
+        width: 12px;
+        height: 8px;
+        background-image: url("../assets/images/down-arrow.svg");
+      }
+
+      &:hover {
+        & > .nav__popup {
+          height: fit-content;
+          top: 18px;
+          opacity: 1;
+        }
+
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
   }
 
   &__link {
     color: $black-color;
+    transition: color 0.4s;
+
+    &:hover {
+      font-weight: 500;
+      color: #060633;
+    }
   }
 }

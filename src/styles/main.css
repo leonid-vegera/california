@@ -8,6 +8,9 @@ h1, h2, h3, h4, h5, h6, ul, li, ol, a, p, input {
 a {
   text-decoration: none;
 }
+a:visited {
+  color: black;
+}
 
 li, ul, ol {
   list-style: none;
@@ -45,6 +48,7 @@ input {
   min-width: 930px;
 }
 .body__header {
+  position: relative;
   margin: 0 73px 28px;
 }
 
@@ -76,12 +80,24 @@ input {
   text-transform: uppercase;
   list-style: none;
 }
+.nav__popup {
+  position: absolute;
+  top: 18px;
+  overflow: hidden;
+  height: 0;
+  z-index: -1;
+  opacity: 0;
+  background-color: #fff;
+  transition: 0.8s;
+}
 .nav__item {
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: 0.3s;
 }
-.nav__item:hover {
-  transform: scale(1.1);
+.nav__item--dropdown {
+  position: relative;
+  z-index: 5;
+  transition: 0.4s;
 }
 .nav__item--dropdown::after {
   content: "";
@@ -91,8 +107,21 @@ input {
   height: 8px;
   background-image: url("../assets/images/down-arrow.svg");
 }
+.nav__item--dropdown:hover > .nav__popup {
+  height: fit-content;
+  top: 18px;
+  opacity: 1;
+}
+.nav__item--dropdown:hover::after {
+  transform: rotate(180deg);
+}
 .nav__link {
   color: #000;
+  transition: color 0.4s;
+}
+.nav__link:hover {
+  font-weight: 500;
+  color: #060633;
 }
 
 .main {
@@ -645,6 +674,30 @@ input {
 }
 .structure-section__item:hover {
   font-size: 18px;
+}
+
+.solutions {
+  width: max-content;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  transition: 0.4s;
+  height: fit-content;
+}
+.solutions__list {
+  font-family: "Inter", sans-serif;
+  margin: 15px;
+  color: #000;
+}
+.solutions__item {
+  margin-bottom: 10px;
+}
+.solutions__item:last-child {
+  margin-bottom: 0;
+}
+.solutions__link {
+  font-size: 13px;
+}
+.solutions__link:hover {
+  color: #060633;
 }
 
 /*# sourceMappingURL=main.css.map */
